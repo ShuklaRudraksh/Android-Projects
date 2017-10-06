@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rhshukla.firebase.SecondOne">
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="99dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="471dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="monospace"
+        android:padding="10sp"
+        android:paddingBottom="10sp"
+        android:paddingEnd="10dp"
+        android:text="Log Out"
+        android:textColor="@android:color/background_light"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rockt"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="monospace"
+        android:text=" Rock"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <LinearLayout
+        android:layout_width="387dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginLeft="-1dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/logout">
+
+        <Button
+            android:id="@+id/rock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="rock"
+            android:text="Rock" />
+
+        <Button
+            android:id="@+id/sissor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="sissor"
+            android:text="Sissor" />
+
+        <Button
+            android:id="@+id/paper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="paper"
+            android:text="Paper" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
